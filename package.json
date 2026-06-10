@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
+    "cors": "^2.8.5",
+    "mongodb": "^6.12.0",
+    "dotenv": "^16.4.7",
+    "jsonwebtoken": "^9.0.2",
+    "@sendgrid/mail": "^8.1.4",
+    "@aws-sdk/client-s3": "^3.1065.0",
+    "multer": "^2.1.1",
+    "pdf-parse": "^2.4.5",
+    "@anthropic-ai/sdk": "^0.104.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/node": "^22.10.5",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/multer": "^1.4.12",
+    "@types/pdf-parse": "^1.1.4"
+  }
+}
